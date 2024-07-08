@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Nirabhra Koley</title>
+</head>
+<body>
+    <!-- <div class="disclamer">
+        <div class="disclamer-box">
+            <h2>DISCLAMER</h2>
+            <a onclick=closeDisclamer()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#ffd60a"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+        </div>
+        <p>BACKEND IS STILL NOT CONNECTED</p>
+    </div> -->
+    <div class="navbar">
+        <div class="navbar-logo">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <div class="navbar-content">
+            <a class="hide-mobile" href="./index.html">Home</a>
+            <a class="hide-mobile" href="./Skill&Expe.html">Skills & Experience</a>
+            <a class="hide-mobile" href="#">Contact</a>
+            <a onclick=showSildeBar() class="menu-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                    viewBox="0 -960 960 960" width="26px" fill="#ffd60a">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a>
+        </div>
+        <div class="slidebar">
+            <a onclick=closeSildeBar() href="#" class="closeicone"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                    viewBox="0 -960 960 960" width="26px" fill="#ffd60a">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></a>
+            <a href="./index.html">Home</a>
+            <a href="./Skill&Expe.html">Skills & Experience</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="contact-me">
+        <h2>Contact Me</h2>
+    </div>
+    <div class="contact-me-details">
+        <div class="contact-me-details-names">
+            <input class="contact-me-detail-name" type="text" placeholder="First Name">
+            <input class="contact-me-detail-name" type="text" placeholder="Last Name">
+            <input class="contact-me-detail-name" type="email" placeholder="Email">
+            <input class="contact-me-detail-name" type="number" placeholder="PHONE">
+        </div>
+        <div class="contact-me-details-edit">
+            <textarea class="contact-me-detail-text" name="" id="" placeholder="Your Text"></textarea>
+            <!-- <input  type="text" placeholder="Your Text"> -->
+            <button class="contact-me-detail-send" style="color: #000814;">SUBMIT</button>
+        </div>
+    </div>
+    <script>
+        function showSildeBar() {
+            const sideBar = document.querySelector('.slidebar')
+            sideBar.style.display = 'flex'
+        }
+        function closeSildeBar() {
+            const sideBar = document.querySelector('.slidebar')
+            sideBar.style.display = 'none'
+        }
+        function closeDisclamer(){
+            const disclamer = document.querySelector('.disclamer')
+            disclamer.style.disclamer = 'none'
+        }
+    </script>
+</body>
+</html>

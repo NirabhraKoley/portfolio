@@ -1,0 +1,398 @@
+/* https://coolors.co/palette/000814-001d3d-003566-ffc300-ffd60a */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000814;
+    color: #ffc300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 1% 1% 1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        transition: .3s;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 3rem;
+}
+
+.navbar-content a {
+    text-decoration: none;
+    padding-left: 5rem;
+    font-weight: 700;
+}
+
+.navbar-logo h1:hover {
+    color: #ffd60a;
+    /* text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white; */
+    animation: bounce 0.5s ease-in;
+}
+.menu-btn{
+    display: none;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-4px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.navbar-logo {
+    padding-left: 1rem;
+}
+
+.navbar-logo h1 {
+    cursor: pointer;
+    margin-left: 2rem;
+}
+.slidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+}
+.slidebar a{
+    text-decoration: none;
+    padding-bottom: 2rem;
+    color: #ffd60a;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+.divider {
+    border: 0.5px solid #ffc300;
+}
+.content{
+    display: flex;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-left img{
+    margin-top: 1.5rem;
+    height: 18rem;
+    width: 22rem;
+}
+.content-left-text-main-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+.content-left-text-name{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 1000;
+}
+.content-left-text-profession{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 1000;
+}
+.content-left-text-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-direction: column;
+    
+}
+.content-left-text-detail{
+    display: flex;
+    margin-top: 2rem;
+    transition: .3s;
+    
+}
+.content-left-text-detail p{
+    margin-right: 1rem;
+}
+.content-left-text-details h2{
+    border-bottom: 2px solid #ffc300;
+}
+.content-left-s{
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+
+
+.content-right{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transition: 0.3s;
+}
+.content-right-text-info h2{
+    margin-bottom: 1rem;
+    font-weight: 1000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.content-right-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
+}
+.content-right-text-about-me{
+    margin-top: 2rem;
+    width: 100%;
+}
+.content-right-text-about-me h2{
+    font-weight: 1000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.content-right-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.content-right-section-topic{
+    font-weight: 1000;
+    align-self: flex-start;
+}
+.content-right-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border: 2px solid #ffc300;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.content-right-section-p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.content-right-mobile-web-section-p{
+    display: none;
+    position: relative;
+    z-index: 998;
+    flex-direction: column;
+    border: 2px solid #ffc300;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
+}
+.content-right-mobile-content-section-p{
+    display: none;
+    position: relative;
+    z-index: 998;
+    flex-direction: column;
+    border: 2px solid #ffc300;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
+}
+.content-right-music-content-section-p{
+    display: none;
+    position: relative;
+    z-index: 998;
+    flex-direction: column;
+    border: 2px solid #ffc300;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
+}
+.content-right-music-code-section-p{
+    display: none;
+    position: relative;
+    z-index: 998;
+    flex-direction: column;
+    border: 2px solid #ffc300;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
+}
+.content-right-travel-code-section-p{
+    display: none;
+    position: relative;
+    z-index: 998;
+    flex-direction: column;
+    border: 2px solid #ffc300;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
+}
+.content-right-game-code-section-p{
+    display: none;
+    position: relative;
+    z-index: 998;
+    flex-direction: column;
+    border: 2px solid #ffc300;
+    height: 100%;
+    top: 50%;
+    bottom: 50%;
+}
+.content-right-section-arrow div{
+    display: none;
+}
+
+
+
+@media(max-width: 600px)
+{
+    body{
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .slidebar{
+        padding-left: 2rem;
+        padding-top: 2rem;
+        width: 60%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-left-text-details{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    .content-right{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        margin-left: 0;
+    }
+    .content-left-text{
+        width: 100%;
+    }
+    .content-left-text-detail{
+        display: flex;
+        width: 100%;
+    }
+    .content-right-text{
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .content-right-section{
+        /* border: 2px solid #ffc300; */
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        margin-right: 0;
+        /* margin-left: 0; */
+        border: none;
+    }
+    .content-right-text-info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .content-right-sections{
+        margin-left: 0;
+        margin-right: 0;
+        margin-left: 1rem;
+        /* border: 2px solid #ffc300; */
+    }
+    .content-right-section-p{
+        display: none;
+    }
+    .content-right-section-arrow{
+        display: flex;
+        /* border: 2px solid #ffc300; */
+        width: 100%;
+    }
+    .content-right-mobile-web-section-p{
+        border: none;
+    }
+    .content-right-mobile-content-section-p{
+        border: none;
+    }
+    .content-right-music-content-section-p{
+        border: none;
+    }
+    .content-right-music-code-section-p{
+        border: none;
+    }
+    .content-right-travel-code-section-p{
+        border: none;
+    }
+    .content-right-game-code-section-p{
+        border: none;
+    }
+    .content-right-section-arrow div{
+        display: inline;
+    }
+    .content-right-text-about-me{
+        margin-left: 1rem;
+    }
+    .content-right-text-about-me h2{
+        margin-left: 1rem;
+    }
+    .close-btn{
+        background-color: #ffc300;
+        /* border: 2px solid #ffc300; */
+        margin-top: 1rem;
+        border-radius: 50%;
+    }
+}

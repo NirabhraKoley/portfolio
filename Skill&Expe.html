@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Skill&Expe.css">
+    <title>Nirabhra Koley</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <div class="navbar-content">
+            <a class="hide-mobile" href="./index.html">Home</a>
+            <a class="hide-mobile" href="#">Skills & Experience</a>
+            <a class="hide-mobile" href="./contact.html">Contact</a>
+            <a onclick=showSildeBar() class="menu-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                    viewBox="0 -960 960 960" width="26px" fill="#ffd60a">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a>
+        </div>
+        <div class="slidebar">
+            <a onclick=closeSildeBar() href="#" class="closeicone"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                    viewBox="0 -960 960 960" width="26px" fill="#ffd60a">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg></a>
+            <a href="./index.html">Home</a>
+            <a href="#">Skills & Experience</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="content">
+        <div class="content-left">
+            <h2>Skills</h2>
+            <div class="content-left-skills">
+                <div class="content-left-skills-topic">
+                    <div class="content-left-skill">
+                        <p>HTML5: <span class="range" style="width: 55%;"></span></p>
+                        <p>CSS: <span class="range" style="width: 60%;"></span></p>
+                        <p>Javascript: <span class="range" style="width: 60%;"></span></p>
+                        <p>Selenium: <span class="range" style="width: 85%;"></span></p>
+                        <p>AppDynamics: <span class="range" style="width: 75%;"></span></p>
+                        <p>Splunk: <span class="range" style="width: 50%;"></span></p>
+                        <p>Java: <span class="range" style="width: 70%;"></span></p>
+                        <p>Python: <span class="range" style="width: 80%;"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <h2>Experience</h2>
+            <div class="content-right-experience1">
+                <div class="content-right-experience1-overall">
+                    <div class="content-right-experience1-date">
+                        <p>Dec 2023 - Present</p>
+                        <p>Kolkata, India</p>
+                    </div>
+                    <div class="content-right-experience1-work">
+                        <p class="content-right-experience1-work-role">Technical Support</p>
+                        <p><br>As a Support Executive, I provided exceptional technical support and efficiently resolved
+                            customer issues, pivotal in the role.
+                            <br>
+                            <br>
+                            • We assist clients with technical queries and issues via phone, email, and chat channels.
+                            <br>
+                            <br>
+                            • Resolve software and hardware issues with analytical skills.
+                            <br>
+                            <br>
+                            • We have increased customer satisfaction scores by 25% through the prompt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right-experience1">
+                <div class="content-right-experience1-overall">
+                    <div class="content-right-experience1-date">
+                        <p>Jul 2022 - Nov 2023</p>
+                        <p>Kolkata, India</p>
+                    </div>
+                    <div class="content-right-experience1-work">
+                        <p class="content-right-experience1-work-role">QA Engineer</p>
+                        <p><br>During my 1.5 years of experience as a QA Engineer working with Selenium, I accomplished
+                            the following:
+                            <br>
+                            <br>
+                            • Performed extensive functional testing, improving system stability by 25%.
+                            <br>
+                            <br>
+                            • Assisted in the manual testing of software functionality, identifying and tracking 30+
+                            bugs.
+                            <br>
+                            <br>
+                            • Automated manual test cases using Selenium WebDriver to improve efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSildeBar() {
+            const sideBar = document.querySelector('.slidebar')
+            sideBar.style.display = 'flex'
+        }
+        function closeSildeBar() {
+            const sideBar = document.querySelector('.slidebar')
+            sideBar.style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>
